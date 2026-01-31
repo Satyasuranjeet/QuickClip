@@ -1,0 +1,6 @@
+fastapi==0.115.0
+motor==3.5.1
+pymongo==4.8.0
+pydantic==2.9.0
+pydantic-settings==2.4.0
+mangum==0.17.0

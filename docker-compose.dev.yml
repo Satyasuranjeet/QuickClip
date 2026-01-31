@@ -1,0 +1,18 @@
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:7
+    container_name: quickclip-mongodb-dev
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data_dev:/data/db
+    networks:
+      - quickclip-network-dev
+
+volumes:
+  mongodb_data_dev:
+
+networks:
+  quickclip-network-dev:
+    driver: bridge
